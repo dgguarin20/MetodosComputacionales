@@ -108,6 +108,7 @@ double** matrix_product(double **a, double**b, int na, int mb, int s)
 	  double v = 0;
 	  for (j=0; j<s; j++)
 	    {
+	      //va en funcion i el a pero b depende de k por las columnas
 	      v = v + a[i][j]*b[j][k];
 
 	    }
@@ -120,6 +121,7 @@ double** matrix_product(double **a, double**b, int na, int mb, int s)
 
 void imprimir(double **c, int n, int m)
 {
+  //para imprimir recorre toda la matriz
   int i;
   int j;
   for(i=0; i<n;i++)
